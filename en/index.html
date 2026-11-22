@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Astra &amp; Aspera is a space strategy game in development and an independent research project on causal simulation.">
+  <title>Astra &amp; Aspera — Space strategy and simulation research</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../assets/site-b5607287b149.css">
+  <link rel="stylesheet" href="../assets/shuttle-39457a4072d8.css">
+  <link rel="stylesheet" href="../assets/engraving-8d20823aba18.css">
+  <script src="../assets/engraving-d475fd529388.js" defer></script>
+  <script src="../assets/prism-light-0531a4c3f6a3.js" defer></script>
+  
+  <script src="../assets/site-c5b9c8549734.js" defer></script>
+<link rel="alternate" hreflang="en" href="https://ru.astra-aspera.org/en/">
+<link rel="alternate" hreflang="ru" href="https://ru.astra-aspera.org/ru/">
+<link rel="alternate" hreflang="zh-hans" href="https://ru.astra-aspera.org/zh-hans/">
+</head>
+<body data-locale="en">
+  <div class="world" aria-hidden="true"><div class="flight-sky" aria-hidden="true"><img class="world-art" src="../assets/world-672-7d5450fd6c4e.webp" srcset="../assets/world-448-f3edd1e301c7.webp 448w, ../assets/world-512-ac9b28bb1cc3.webp 512w, ../assets/world-672-7d5450fd6c4e.webp 672w, ../assets/world-887-c8f893ffc54e.webp 887w" sizes="(max-width: 600px) max(100vw, 59vh), max(100vw, 50vh)" width="887" height="1774" fetchpriority="high" alt=""><i hidden></i></div></div>
+  <a class="skip" href="#main" data-copy="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      
+      <nav class="primary-nav" data-label="navigation" aria-label="Main navigation">
+        <a href="#game" data-copy="game">Game</a>
+        <a href="#research" data-copy="research">Research</a>
+        <a href="#publications" data-copy="publications">Publications</a>
+        <a href="#about" data-copy="about">About</a>
+      </nav>
+      <nav class="languages" data-label="languages" aria-label="Page language">
+        <a href="../en/" hreflang="en" lang="en" data-lang="en" aria-current="true"><span aria-hidden="true">🇬🇧</span> English</a>
+        <a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh-hans"><span aria-hidden="true">🇨🇳</span> 简体中文</a>
+        <a href="../ru/" hreflang="ru" lang="ru" data-lang="ru"><span aria-hidden="true">🇷🇺</span> Русский</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      
+      <div class="sky-sign" role="img" aria-label="Astra &amp; Aspera">
+        <svg viewBox="0 0 460 180" aria-hidden="true"><path d="M66 69 Q230 -39 394 69 Q230 -36 66 69Z" fill="currentColor"/><path d="M230 4 Q232 24 248 26 Q232 28 230 47 Q228 28 212 26 Q228 24 230 4Z" fill="currentColor"/>
+        <text x="230" y="124" text-anchor="middle" font-family="Georgia,serif" font-size="86" fill="currentColor">A<tspan font-size="48"> &amp; </tspan>A</text>
+        <text x="230" y="159" text-anchor="middle" font-family="Georgia,serif" font-size="19" letter-spacing="6" fill="currentColor">ASTRA &amp; ASPERA</text></svg>
+      </div><div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="section-label" data-copy="heroLabel">Space strategy in development</p>
+          <h1 id="hero-title" data-copy="heroTitle">A galaxy with a past</h1>
+          <p class="hero-intro" data-copy="heroIntro">By the time a civilisation sends its first ship to another galaxy, generations have already shaped its course. There were discoveries worth crossing the stars for, neighbours who became allies, and borders drawn after a war. Astra &amp; Aspera is a strategy game built around the idea of simulating an entire universe. You guide one civilisation through it. Trace a frontier or a trade route back through time and you should be able to see whose decisions put it there.</p>
+          <a class="button" href="#simulation"><span data-copy="seeExample">Follow a chain of events</span></a>
+        </div>
+        <figure class="hero-art">
+          <figcaption>
+            <a href="../assets/path-to-the-stars-f60a72b9fb0e.webp" class="full-art" data-copy="artCaption">Path to the Stars · Open full illustration</a>
+            <span data-copy="motto" class="motto" lang="la">Per scientiam ad astra</span>
+            <span class="license-note" data-copy="licenseNote">The engine’s open-source license has yet to be selected.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="shell simulation" id="simulation" aria-labelledby="simulation-title">
+      <div class="section-intro">
+        <p class="section-label" data-copy="simulationLabel">Interactive model · Orbital station</p>
+        <h2 id="simulation-title" data-copy="simulationTitle">When can the expedition leave?</h2>
+        <p data-copy="simulationBody">Two ships are due at the station at minute 20. One carries fuel. The other brings the crew, who need three minutes for their checks. The expedition can depart as soon as both are ready. Use the chart to see which arrival actually sets the departure time.</p>
+        <p class="graph-problem" data-copy="problem">At galactic scale, a changed event can have thousands of dependants. The hard part is finding where its effect stops. Here, you can follow the links backwards from departure to see which event determined it.</p>
+      </div>
+      <div class="timeline prism" id="timeline">
+        <div class="timeline-header">
+          <p data-copy="timelineTitle">Expedition flight plan</p>
+          <button type="button" id="delay" aria-pressed="false" data-copy="applyDelay">Delay fuel by 5 min</button>
+        </div>
+        <span hidden data-copy="changed">Fuel arrives five minutes late, but departure slips by only two. Three minutes of the delay overlap the crew checks. Fuel now sets the departure time; the crew’s schedule holds.</span>
+        <span hidden data-copy="resetDelay">Restore the original route</span>
+        <span hidden id="minute-format">{n} min</span>
+        <div class="causal-map">
+          <svg class="routes" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <path class="fuel-link" d="M24 18 V40 Q24 44 28 44 H46 Q50 44 50 48 V83"/>
+            <path class="crew-link" d="M76 18 V53 M76 54 V66 Q76 70 72 70 H54 Q50 70 50 74 V83"/>
+          </svg>
+          <div class="event arrival-a"><span data-copy="missionA">Fuel delivered</span><strong id="arrival-a" data-time="20">20 min</strong></div>
+          <div class="event arrival-b"><span data-copy="missionB">Crew aboard</span><strong id="arrival-b" data-time="20">20 min</strong></div>
+          <div class="event checked"><span data-copy="checks">Systems checked</span><strong id="checked" data-time="23">23 min</strong></div>
+          <div class="event departs"><span data-copy="departure">Expedition departs</span><strong id="departs" data-time="23">23 min</strong></div>
+        </div>
+        <p class="timeline-note" id="timeline-note" role="status" data-copy="baseline">The crew sets the pace. Fuel arrives at minute 20 and waits until checks finish at minute 23. What happens if navigation delays the fuel ship?</p>
+      </div>
+    </section>
+
+    <section class="shell directions" aria-labelledby="directions-title">
+      <h2 id="directions-title" data-copy="directionsTitle">What it takes to build this galaxy</h2>
+      <div class="direction-grid">
+        <article id="game">
+          <p class="section-label" data-copy="game">Game</p>
+          <h3 data-copy="gameName">Astra &amp; Aspera</h3>
+          <p data-copy="gameBody">What makes a planet habitable? A human colony needs food. A digital society needs computing capacity, power and somewhere to dump waste heat. The choice of inhabitants changes what it makes sense to build first.</p>
+        </article>
+        <article id="research">
+          <p class="section-label" data-copy="engineLabel">Simulation engine</p>
+          <h3 data-copy="engineName">Actors &amp; Aggregates</h3>
+          <p data-copy="engineBody">A shipment arrives late. Construction that needs it must move; a mission in another system can keep its date. This engine project asks how to find the affected events and how to check that a second run produces the same sequence.</p>
+        </article>
+        <article>
+          <p class="section-label" data-copy="methodLabel">Research practice</p>
+          <h3 data-copy="methodName">Agents &amp; Artifacts</h3>
+          <p data-copy="methodBody">An AI agent proposes a design. Which assumptions went into it? What test could expose a mistake? This project traces a proposal through review and experiment so another reader can see why it was accepted or set aside.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell closing">
+      <article id="publications">
+        <p class="section-label" data-copy="publications">Publications</p>
+        <h2 data-copy="articleTitle">When should a simulation change its schedule?</h2>
+        <p data-copy="articleBody">Article in preparation. I will follow a single delay through the simulation clock, the events that depend on it and the test that can catch a missed update.</p>
+      </article>
+      <article id="about">
+        <p class="section-label" data-copy="about">About</p>
+        <h2 data-copy="authorName">Daniil</h2>
+        <p data-copy="authorBody">I’m a software architect. Astra &amp; Aspera brings together two questions I want to explore: what choices would a civilisation face among the stars, and what would an engine need to know to work out their consequences? I design the game around the first question and build experiments around the second.</p>
+        <div class="contact-links">
+          <a href="https://orcid.org/0009-0004-9159-3709">ORCID 0009-0004-9159-3709</a>
+          <!--email_off-->
+          <a href="mailto:inbox@astra-aspera.org">inbox@astra-aspera.org</a>
+          <!--/email_off-->
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="shell footer"><span>Astra &amp; Aspera</span><a href="mailto:inbox@astra-aspera.org">inbox@astra-aspera.org</a><a href="#top" data-copy="backTop">Back to top</a></footer>
+</body>
+</html>

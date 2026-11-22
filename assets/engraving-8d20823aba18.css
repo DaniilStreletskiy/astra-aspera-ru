@@ -1,0 +1,24 @@
+.site-header{position:relative;isolation:isolate;z-index:2;border:0;background:transparent;font-family:Menlo,Consolas,monospace}
+.site-header::before{content:"";position:absolute;inset:0;z-index:-1;background:#030405;box-shadow:inset 0 -1px #304452;clip-path:polygon(0 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,var(--wing,73%) 100%,calc(var(--wing,73%) - 12px) calc(100% - 12px),8px calc(100% - 12px),0 calc(100% - 20px))}
+.site-header .header-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px;width:100%;padding:10px clamp(12px,3vw,46px) 20px;min-height:60px;margin:0;box-sizing:border-box}
+.site-header .brand,.site-header nav a{font-family:inherit;font-style:normal;font-weight:600;line-height:1.4;letter-spacing:.035em;text-decoration:none}
+.site-header .brand{font-size:1.15rem;white-space:nowrap}.site-header .brand-mark{display:none}
+.site-header .languages,.site-header .primary-nav{display:flex;align-items:center;flex-wrap:wrap;gap:6px 12px}
+.site-header nav a{font-size:.85rem}
+.site-header .languages{transform:translateY(5px)}
+.site-header .languages a{padding:2px;border:0}
+.site-header a:not(:focus-visible){background-color:transparent}
+@media(max-width:680px){.site-header .header-inner{justify-content:flex-start}.site-header .languages{margin-left:auto}.site-header .primary-nav{gap:5px 12px}}
+
+.site-header{--step:26px}
+.site-header::before{background:linear-gradient(110deg,#030812ba,#081321a8);box-shadow:inset 0 -3px 12px #01030ae0;backdrop-filter:blur(2px);clip-path:polygon(0 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,var(--wing) 100%,calc(var(--wing) - var(--step)) calc(100% - var(--step)),8px calc(100% - var(--step)),0 calc(100% - var(--step) - 8px))}
+.site-header .header-inner{align-items:start;min-height:76px;padding:10px clamp(12px,3vw,46px) 8px}
+.site-header .primary-nav{order:0;justify-content:flex-start;padding-block:3px}
+.site-header .languages{margin-left:auto;align-self:end;transform:none;padding:4px}
+@media(max-width:760px){.site-header .header-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px;padding-inline:12px}.site-header .primary-nav{grid-column:1;grid-row:1;align-self:start;padding:0 0 26px;gap:2px 12px}.site-header .languages{grid-column:2;grid-row:1;display:grid;gap:0}.site-header nav a{font-size:.78rem}}
+
+.site-header{--letter:#c5dcea}
+.site-header .languages a,.site-header .languages a:hover,.site-header .languages a[aria-current=true]{color:var(--letter);border:0;background:transparent;text-decoration:none}
+.site-header .engraved{font:400 1em/1.45 Menlo,Consolas,"PingFang SC","Microsoft YaHei",monospace;letter-spacing:.045em;color:transparent;background:radial-gradient(ellipse 60px 28px at var(--cx,-300px) 50%,#eff8ff,transparent),linear-gradient(var(--letter),var(--letter));background-clip:text;-webkit-background-clip:text;filter:url(#cut-letter)}
+.site-header .languages a[aria-current=true] .engraved{border-bottom:1px solid #c5dcea80;padding-bottom:2px}
+.site-header a:hover .engraved{opacity:.85}

@@ -1,0 +1,11 @@
+/* Local +x follows the flight heading. The nozzle sits on the original light source. */
+.flight-sky i::after, .comet::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  width: clamp(26px, 3vw, 38px);
+  aspect-ratio: 42 / 21;
+  transform: translateY(-50%);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 21'%3E%3Cpath d='M3 8 1 4 7 5 13 8 22 7 11 1 17 1 31 7Q39 8 41 10Q38 13 31 13L12 20 7 19 20 12 8 13 2 15 4 11Z' fill='%23598598' stroke='%23c6e4ed' stroke-width='.7' stroke-linejoin='round'/%3E%3Cpath d='M4 8 23 7 35 9 40 10 24 10 7 12Z' fill='%23d7eaf0'/%3E%3Cpath d='m23 8 7-.1 5 1.5-10 .2Z' fill='%23132e49'/%3E%3Cpath d='m4 8-1 4' stroke='%23afffeb' stroke-width='2'/%3E%3C/svg%3E") center / contain no-repeat;
+}
